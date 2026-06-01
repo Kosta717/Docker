@@ -51,6 +51,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
+          port: 58529
           script: |
             git clone https://github.com/Kosta717/Docker.git my_app || true
             cd my_app
