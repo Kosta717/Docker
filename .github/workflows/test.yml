@@ -23,7 +23,7 @@ jobs:
           pip install ".[test]"
 
       - name: Run pytest
-        run: pytest -m pytest
+        run: python -m pytest
 
   deploy:
     needs: test
