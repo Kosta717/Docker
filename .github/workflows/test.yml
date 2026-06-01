@@ -3,7 +3,7 @@ name: Run Tests
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
@@ -38,7 +38,7 @@ jobs:
           script: |
             git clone https://github.com/Kosta717/Docker.git my_app || true
             cd my_app
-            git pull origin master
+            git pull origin main
             
             docker stop kubsu-app || true
             docker rm kubsu-app || true
