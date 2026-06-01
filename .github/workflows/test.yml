@@ -15,7 +15,7 @@ jobs:
         env:
           POSTGRES_USER: kubsu
           POSTGRES_PASSWORD: kubsu
-          POSTGRES_DB: kubsu_db
+          POSTGRES_DB: kubsu
         ports:
           - 5432:5432
         options: >-
